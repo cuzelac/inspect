@@ -6,6 +6,10 @@ import (
 	"github.com/square/inspect/metrics"
 )
 
+//TODO(cu): need to figure out how to actually split apart this Checker
+//interface The checker interface should be what's passed around.  What
+//currently is in this code should be a type of Checker, say a 'EvalChecker' or
+//something.
 type Checker interface {
 	// User must call NewScopeAndPackage before
 	// inserting metric values
